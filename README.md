@@ -25,8 +25,7 @@ Topologi jaringan dirancang menggunakan segmen:
 
 ## Port yang Menjadi Fokus Pengujian
 
-Red Team melakukan identifikasi awal terhadap beberapa service
-yang berpotensi menjadi fokus pengujian keamanan pada Metasploitable.
+Pengujian keamanan dilakukan terhadap layanan jaringan yang tersedia pada IoT Monitoring Server sebagai lingkungan simulasi backend sistem monitoring IoT. Beberapa port yang menjadi fokus identifikasi awal meliputi:
 
 | Port | Service |
 |------|---------|
@@ -36,11 +35,11 @@ yang berpotensi menjadi fokus pengujian keamanan pada Metasploitable.
 |  80  |   HTTP  |
 | 3306 |   MySQL |
 
-Port dan service lain pada Metasploitable dapat diidentifikasi dan diverifikasi kembali pada tahap implementasi.
+Daftar port tersebut digunakan sebagai acuan dalam proses identifikasi dan verifikasi layanan pada IoT Monitoring Server. Pengujian selanjutnya disesuaikan dengan layanan yang aktif dan relevan terhadap lingkungan simulasi.
 
 ## Peran Red Team dan Blue Team
-**Red Team** melakukan pengujian keamanan terhadap service yang tersedia pada IoT Monitoring Server.
-**Blue Team** menggunakan Security Onion untuk memonitor aktivitas jaringan dan mengamati indikasi aktivitas pengujian dari Red Team.
+**Red Team** bertugas melakukan pengujian keamanan terhadap Target Server yang merepresentasikan backend sistem monitoring tanah berbasis IoT. Pengujian dilakukan untuk mengidentifikasi layanan jaringan yang tersedia serta mengamati potensi kelemahan pada lingkungan server.
+**Blue Team** menggunakan Security Onion sebagai Monitoring Node untuk memantau aktivitas jaringan yang terjadi selama proses pengujian. Hasil monitoring digunakan untuk mengidentifikasi aktivitas yang berasal dari Attacker Node dan mengevaluasi indikasi aktivitas yang tidak sesuai pada jaringan.
 
 ## Struktur Design
 - `docs/design/topology.png` — diagram topologi jaringan.
