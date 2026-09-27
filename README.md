@@ -7,16 +7,19 @@ Repository Mata Kuliah Keamanan Siber Kelas B – Kelompok 4 | TEK1314 2026
 
 # PBL Keamanan Siber - Kelompok 4
 ## Skenario Proyek
-Proyek PBL Kelompok 4 mengangkat skenario **Simulasi Pengujian Keamanan Server Rentan Menggunakan Metasploitable**.
-Lingkungan proyek terdiri dari tiga node utama:
-- **Kali Linux** sebagai Attacker Node yang digunakan oleh Red Team.
-- **Metasploitable** sebagai Target Server atau korban.
-- **Security Onion** sebagai Monitoring Node yang digunakan oleh Blue Team untuk memantau aktivitas jaringan.
+Proyek PBL Kelompok 4 mengangkat skenario **Pengujian Keamanan Sistem Monitoring Tanah Berbasis IoT**. Sistem yang menjadi objek pengujian merupakan sistem monitoring yang digunakan untuk memantau kondisi tanah berdasarkan beberapa parameter, yaitu suhu, pH, dan kelembapan tanah.
+
+Pada sistem tersebut, data hasil pembacaan sensor dikirimkan menuju server monitoring untuk diproses dan digunakan sebagai sumber informasi kondisi tanah. Dalam proyek keamanan ini, server monitoring direpresentasikan oleh **IoT Monitoring Server** yang digunakan sebagai lingkungan simulasi pengujian keamanan.
+
+Lingkungan proyek terdiri atas tiga node utama, yaitu:
+- Kali Linux sebagai Attacker Node untuk melakukan pengujian keamanan
+- IoT Monitoring Server sebagai server yang merepresentasikan backend sistem monitoring IoT
+- Security Onion sebagai Monitoring Node untuk memantau aktivitas jaringan selama proses pengujian
 
 ## Network
 Topologi jaringan dirancang menggunakan segmen:
 - Network: `192.168.4.0/24`
-- Target Server: `192.168.4.5`
+- IoT Monitoring Server: `192.168.4.5`
 - Attacker Node: `192.168.4.100`
 - Monitoring Node: `192.168.4.200`
 
@@ -36,7 +39,7 @@ yang berpotensi menjadi fokus pengujian keamanan pada Metasploitable.
 Port dan service lain pada Metasploitable dapat diidentifikasi dan diverifikasi kembali pada tahap implementasi.
 
 ## Peran Red Team dan Blue Team
-**Red Team** melakukan pengujian keamanan terhadap service yang tersedia pada Target Server.
+**Red Team** melakukan pengujian keamanan terhadap service yang tersedia pada IoT Monitoring Server.
 **Blue Team** menggunakan Security Onion untuk memonitor aktivitas jaringan dan mengamati indikasi aktivitas pengujian dari Red Team.
 
 ## Struktur Design
