@@ -1,4 +1,4 @@
-# Attack Plan — Fase 2 (Red Team)
+# Attack Plan Fase 2 (Red Team)
 
 **Kelompok:** 4 (Kelas B)
 **Skenario proyek:** Pengujian Keamanan Sistem Monitoring Tanah Berbasis IoT
@@ -27,7 +27,7 @@
 
 ## 3. Detail Skenario
 
-### S1 — Reconnaissance
+### S1 Reconnaissance
 
 - **Tujuan:** memetakan permukaan serangan.
 - **Langkah:**
@@ -40,7 +40,7 @@
 - **Deteksi Blue Team:** Suricata `ET SCAN`, Zeek `conn.log` (banyak koneksi `S0`/`REJ` dari satu sumber).
 - **Mitigasi yang diharapkan:** whitelist port per layanan, rate limiting koneksi.
 
-### S2 — Brute-force SSH
+### S2 Brute-force SSH
 
 - **Tujuan:** menguji ketahanan autentikasi SSH setelah hardening.
 - **Langkah:**
@@ -53,7 +53,7 @@
 - **Ambang wajar:** lebih dari 5 kegagalan dalam 60 detik dari satu IP.
 - **Mitigasi yang diharapkan:** fail2ban, larangan login root (sudah), key-only auth (sudah).
 
-### S3 — Validasi API Key dan Rate Limiting
+### S3 Validasi API Key dan Rate Limiting
 
 - **Tujuan:** menguji apakah endpoint `/api/v1/` menolak request tanpa API key yang valid dan membatasi request berlebih.
 - **Langkah:**
@@ -70,7 +70,7 @@
 - **Deteksi Blue Team:** log Nginx berisi status 401/403/429 berulang dari satu IP; Zeek `http.log` untuk pola request berulang.
 - **Mitigasi yang diharapkan:** validasi X-API-KEY di sisi server, rate limiting (sudah diterapkan), HTTPS dengan HSTS (sudah diterapkan).
 
-### S4 — ARP Spoofing (opsional)
+### S4 ARP Spoofing (opsional)
 
 - **Tujuan:** membuktikan apakah traffic HTTP tanpa enkripsi bisa disadap di segmen lokal.
 - **Catatan:** di lingkungan virtual, ARP spoofing bisa tidak stabil. Jika gagal, catat sebagai kendala dan jangan dipaksakan.
