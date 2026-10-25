@@ -1,15 +1,5 @@
 # Attack Plan Fase 2 (Red Team)
 
-**Kelompok:** 4 (Kelas B)
-**Skenario proyek:** Pengujian Keamanan Sistem Monitoring Tanah Berbasis IoT
-**Target node:** `192.168.4.5` — `SRV-IOT-KEL04B` (Ubuntu Server 22.04 LTS)
-**Attacker node:** `192.168.4.100` — Kali Linux
-**Monitoring node:** `192.168.4.200` — Security Onion
-**Disusun oleh:** Red Team (Zahra Fadhail Amalia, Mikhail Rafi Azka)
-**Status:** Rencana. Eksekusi Minggu 10, pelaporan Minggu 11.
-
----
-
 ## 1. Ringkasan Skenario
 
 | Kode | Kategori | Teknik | Tools | Target | Hasil yang diharapkan |
