@@ -1,8 +1,4 @@
-# Deklarasi Tech Stack dan Replikasi — Kelompok 4
-
-**Mata Kuliah:** TEK1314 Keamanan Siber — Kelas B
-**Skenario:** Pengujian Keamanan Sistem Monitoring Tanah Berbasis IoT
-**Tanggal:** `[isi tanggal]`
+# Deklarasi Tech Stack dan Replikasi 
 
 ## 1. Tech Stack Sistem Asli vs Replikasi
 
