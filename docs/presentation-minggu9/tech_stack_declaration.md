@@ -27,8 +27,3 @@ Segmen jaringan: `192.168.4.0/24`
 | Attacker Node (Kali Linux) | 192.168.4.100 | Platform Red Team: reconnaissance, port scanning, pengujian API, serangan |
 | Monitoring Node (Security Onion, management) | 192.168.4.200 | Dashboard SOC dan manajemen Security Onion untuk Blue Team |
 | Monitoring Node (Security Onion, sniffer) | Promiscuous (tanpa IP) | Interface SPAN untuk penangkapan paket jaringan |
-
-## 4. Verifikasi Konektivitas
-
-Ketiga node saling terhubung dan dapat saling melakukan ping menggunakan IP sesuai topologi.
-Tanggal verifikasi: `[isi]`
