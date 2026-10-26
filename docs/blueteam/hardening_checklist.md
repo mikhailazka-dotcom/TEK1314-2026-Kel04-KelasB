@@ -3,7 +3,6 @@
 **Target:** SRV-IOT-KEL04B — 192.168.4.5 (Ubuntu Server 22.04 LTS)
 **PIC:** Radinal Avram Utama (Blue Team)
 
-Status: ✅ Sudah · ⬜ Belum · ⚠️ Perlu verifikasi
 Bukti before/after tersimpan di folder [`evidence/`](evidence/).
 
 ## A. Access & Authentication
@@ -17,7 +16,7 @@ Bukti before/after tersimpan di folder [`evidence/`](evidence/).
 
 | No | Kontrol | Status | Bukti Before | Bukti After |
 |---|---|---|---|---|
-| B1 | Firewall UFW whitelist: hanya port 22, 80, 443, 1883 | ✅ ⚠️ | [docs/blueteam/evidence/Firewall Status Before.jpeg](https://github.com/mikhailazka-dotcom/TEK1314-2026-Kel04-KelasB/blob/main/docs/blueteam/evidence/Firewall%20Status%20Before.jpeg) | [docs/blueteam/evidence/Firewall Status After.jpeg](https://github.com/mikhailazka-dotcom/TEK1314-2026-Kel04-KelasB/blob/main/docs/blueteam/evidence/Firewall%20Status%20After.jpeg) |
+| B1 | Firewall UFW whitelist: hanya port 22, 80, 443, 1883 | ✅ | [docs/blueteam/evidence/Firewall Status Before.jpeg](https://github.com/mikhailazka-dotcom/TEK1314-2026-Kel04-KelasB/blob/main/docs/blueteam/evidence/Firewall%20Status%20Before.jpeg) | [docs/blueteam/evidence/Firewall Status After.jpeg](https://github.com/mikhailazka-dotcom/TEK1314-2026-Kel04-KelasB/blob/main/docs/blueteam/evidence/Firewall%20Status%20After.jpeg) |
 | B2 | Sembunyikan versi Nginx (`server_tokens off`) | ✅ | [docs/blueteam/evidence/Sembunyikan versi nginx Before.jpeg](https://github.com/mikhailazka-dotcom/TEK1314-2026-Kel04-KelasB/blob/main/docs/blueteam/evidence/Sembunyikan%20versi%20nginx%20Before.jpeg) | [docs/blueteam/evidence/Sembunyikan versi nginx After.jpeg](https://github.com/mikhailazka-dotcom/TEK1314-2026-Kel04-KelasB/blob/main/docs/blueteam/evidence/Sembunyikan%20versi%20nginx%20After.jpeg) |
 | B3 | Rate limiting Nginx pada `/api/v1/` | ✅ | [docs/blueteam/evidence/Nginx Rate Limiting Before.jpeg](https://github.com/mikhailazka-dotcom/TEK1314-2026-Kel04-KelasB/blob/main/docs/blueteam/evidence/Nginx%20Rate%20Limiting%20Before.jpeg) | [docs/blueteam/evidence/Nginx Rate Limiting After.jpeg](https://github.com/mikhailazka-dotcom/TEK1314-2026-Kel04-KelasB/blob/main/docs/blueteam/evidence/Nginx%20Rate%20Limiting%20After.jpeg) |
 
